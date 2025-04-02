@@ -21,31 +21,24 @@ This project analyzes resumes against a job description using **Google Gemini** 
 ```sh
 git clone https://github.com/your-username/resume-analyzer.git
 cd resume-analyzer
+```
 
 ### 2️⃣ Install Dependencies
 ```sh
 npm install
+```
 
----
-
-###  Environment Variables
+### 3️⃣ Environment Variables
 Create a .env file in the root directory and add your API key:
 - GEMINI_API_KEY= ""
 
+### 4️⃣ Run the Development Server
+```sh
+npm run dev
+```
 
-
-
-  2️⃣ Install Dependencies
-    npm install
-
-  3️⃣ Set Up Environment Variables
-    Create a .env file in the root directory and add your API keys:
-        GEMINI_API_KEY= ""
-
-  4️⃣ Run the Development Server
-    npm run dev
-
-🔥 Example Response from API
+## 🔥 Example Response from API
+```sh
     {
       "results": [
         {
@@ -60,16 +53,16 @@ Create a .env file in the root directory and add your API key:
         }
       ],
     }
+```
+## 🎭 Mock Mode
+- You can enable mock mode if you don't want to use real AI.
 
-  🎭 Mock Mode
-    You can enable mock mode if you don't want to use real AI.
+## 🛠️ Technologies Used
+- **Next.js** – API Routes & Server-side Processing
+- **Google Gemini API** – AI-powered resume analysis
+- **Tailwind CSS** – Styling
+- **Node.js** – Backend processing
+- **FormData** – Handling file uploads
 
-  🛠️ Technologies Used
-    Next.js – API Routes & Server-side Processing
-    Google Gemini API – AI-powered resume analysis
-    Tailwind CSS – Styling
-    Node.js – Backend processing
-    FormData API – Handling file uploads
-
-  📜 License
-    MIT License © 2025 Tech Zodia
+## 📜 License
+- MIT License © 2025 Tech Zodia
