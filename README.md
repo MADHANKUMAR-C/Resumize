@@ -1,40 +1,55 @@
 # Resumize
 
+📄 AI-Powered Resume Analyzer
+This project analyzes resumes against a job description using Google Gemini or OpenAI GPT models. It extracts key information from PDFs and Word documents, evaluates candidates, and provides a structured analysis.
 
-Resume Analysis API
+🚀 Features
+✅ AI-Powered Resume Analysis – Uses Gemini 1.5 Pro or GPT-3.5/GPT-4
+✅ Supports Multiple Resumes – Upload PDFs or Word documents
+✅ Mock Mode Available – Use mock analysis for testing without API keys
+✅ JSON-Based Response – Structured insights including match scores, key skills, and recommendations
+✅ Fallback Mechanism – If AI API fails, mock analysis is used
 
-This project provides an API to analyze resumes using either Google Gemini API or OpenAI GPT. The API extracts text from uploaded resumes (PDF/DOCX) and evaluates key skills, strengths, weaknesses, and suitability for job positions.
+⚙️ Installation
+  1️⃣ Clone the Repository
+    git clone https://github.com/your-username/resume-analyzer.git
+    cd resume-analyzer
 
-Features
+  2️⃣ Install Dependencies
+    npm install
 
-Supports PDF and DOCX resume uploads.
+  3️⃣ Set Up Environment Variables
+    Create a .env file in the root directory and add your API keys:
+        GEMINI_API_KEY= ""
 
-Extracts and analyzes resume text.
+  4️⃣ Run the Development Server
+    npm run dev
 
-Uses Google Gemini API and OpenAI GPT API for analysis.
+🔥 Example Response from API
+    {
+      "results": [
+        {
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "match_score": 0.85,
+          "summary": "Experienced software engineer with 5+ years in full-stack development.",
+          "key_skills": ["JavaScript", "React", "Node.js"],
+          "strengths": ["Strong problem-solving", "Team collaboration"],
+          "areas_for_improvement": ["Cloud experience", "Database optimization"],
+          "recommendation": "Proceed with interview"
+        }
+      ],
+    }
 
-Returns a structured JSON response with insights.
+  🎭 Mock Mode
+    You can enable mock mode if you don't want to use real AI.
 
-Includes a mock mode for testing without API calls.
+  🛠️ Technologies Used
+    Next.js – API Routes & Server-side Processing
+    Google Gemini API – AI-powered resume analysis
+    Tailwind CSS – Styling
+    Node.js – Backend processing
+    FormData API – Handling file uploads
 
-Tech Stack
-
-Backend: Node.js, Express
-
-AI Services: Google Gemini API, OpenAI GPT API
-
-File Handling: Multer, Langchain PDFLoader, DocxLoader
-
-Environment Variables: dotenv
-
-Setup and Installation
-
-Prerequisites
-
-Install Node.js and npm
-
-Get API keys for Google Gemini API and OpenAI GPT API
-
-Installation Steps
-
-Clone the repository:
+  📜 License
+    MIT License © 2025 Tech Zodia
