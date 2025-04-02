@@ -30,7 +30,9 @@ npm install
 
 ### 3️⃣ Environment Variables
 Create a .env file in the root directory and add your API key:
-- GEMINI_API_KEY= ""
+```sh
+GEMINI_API_KEY= ""
+```
 
 ### 4️⃣ Run the Development Server
 ```sh
