@@ -1,19 +1,39 @@
 # Resumize
 
-📄 AI-Powered Resume Analyzer
-This project analyzes resumes against a job description using Google Gemini or OpenAI GPT models. It extracts key information from PDFs and Word documents, evaluates candidates, and provides a structured analysis.
+📄 **AI-Powered Resume Analyzer**  
+This project analyzes resumes against a job description using **Google Gemini** model. It extracts key information from PDFs and Word documents, evaluates candidates, and provides a structured analysis.
 
-🚀 Features
-✅ AI-Powered Resume Analysis – Uses Gemini 1.5 Pro or GPT-3.5/GPT-4
-✅ Supports Multiple Resumes – Upload PDFs or Word documents
-✅ Mock Mode Available – Use mock analysis for testing without API keys
-✅ JSON-Based Response – Structured insights including match scores, key skills, and recommendations
-✅ Fallback Mechanism – If AI API fails, mock analysis is used
+---
 
-⚙️ Installation
-  1️⃣ Clone the Repository
-    git clone https://github.com/your-username/resume-analyzer.git
-    cd resume-analyzer
+## 🚀 Features
+
+- **AI-Powered Resume Analysis** – Uses **Gemini 1.5 Pro**
+- **Supports Multiple Resumes** – Upload PDFs or Word documents  
+- **Mock Mode Available** – Use mock analysis for testing without API keys  
+- **JSON-Based Response** – Structured insights including match scores, key skills, and recommendations  
+- **Fallback Mechanism** – If AI fails, mock analysis is used  
+
+---
+
+## ⚙️ Installation  
+
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/your-username/resume-analyzer.git
+cd resume-analyzer
+
+### 2️⃣ Install Dependencies
+```sh
+npm install
+
+---
+
+###  Environment Variables
+Create a .env file in the root directory and add your API key:
+- GEMINI_API_KEY= ""
+
+
+
 
   2️⃣ Install Dependencies
     npm install
